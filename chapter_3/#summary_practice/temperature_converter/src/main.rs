@@ -26,7 +26,6 @@ fn main() {
 
         println!("Please insert temperature to convert from.");
 
-
         io::stdin()
             .read_line(&mut temperature)
             .expect("Failed to read line");
@@ -53,31 +52,37 @@ fn main() {
 
 fn celsius_to_kelvin(temperature: f32) {
     println!("🥶");
-    println!("{temperature} Celcius is {} Kelvin.", 
-        temperature + 273.12);
+    println!("{temperature} Celcius is {} Kelvin.", temperature + 273.12);
 }
 
 fn celsius_to_fahrenheit(temperature: f32) {
     println!("🔥");
-    println!("{temperature} Celsius is {} Fahrenheit.", 
-        9.0 / 5.0 * temperature + 32.0);
+    println!(
+        "{temperature} Celsius is {} Fahrenheit.",
+        9.0 / 5.0 * temperature + 32.0
+    );
 }
 
 fn kelvin_to_celsius(temperature: f32) {
-    println!("{temperature} Kelvin is {} Celsius.", 
-        temperature - 273.12);
+    println!("{temperature} Kelvin is {} Celsius.", temperature - 273.12);
 }
 fn kelvin_to_fahrenheit(temperature: f32) {
-    println!("{temperature} Kelvin is {} Fahrenheit.", 
-        9.0 / 5.0 * temperature - 459.67);
+    println!(
+        "{temperature} Kelvin is {} Fahrenheit.",
+        9.0 / 5.0 * temperature - 459.67
+    );
 }
 fn fahrenheit_to_celsius(temperature: f32) {
-    println!("{temperature} Fahrenheit is {} Celsius.", 
-        5.0 / 9.0 * (temperature - 32.0));
+    println!(
+        "{temperature} Fahrenheit is {} Celsius.",
+        5.0 / 9.0 * (temperature - 32.0)
+    );
 }
 fn fahrenheit_to_kelvin(temperature: f32) {
-    println!("{temperature} Fahrenheit is {} Kelvin.", 
-        5.0 / 9.0 * (temperature + 459.67));
+    println!(
+        "{temperature} Fahrenheit is {} Kelvin.",
+        5.0 / 9.0 * (temperature + 459.67)
+    );
 }
 
 fn not_implemented() {

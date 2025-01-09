@@ -1,0 +1,1 @@
+f:\#Programming\RustoverProjects\the_rust_programming_language\chapter_5\rectangles\target\debug\rectangles.exe: f:\#Programming\RustoverProjects\the_rust_programming_language\chapter_5\rectangles\src\main.rs
